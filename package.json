@@ -1,0 +1,18 @@
+{
+  "name": "nutricart",
+  "version": "1.0.0",
+  "description": "NutriCart healthy meal kit subscription and e-commerce platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "meal-kit",
+    "subscription",
+    "ecommerce",
+    "nutrition"
+  ],
+  "author": "",
+  "license": "MIT"
+}

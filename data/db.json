@@ -1,0 +1,175 @@
+{
+  "meals": [
+    {
+      "id": "wl-green-bowl",
+      "name": "Lean Green Power Bowl",
+      "category": "Weight loss",
+      "price": 249,
+      "calories": 420,
+      "protein": 28,
+      "carbs": 45,
+      "fat": 12,
+      "cookTime": "20 min",
+      "badge": "Best seller",
+      "image": "linear-gradient(135deg, #0f8f65, #7ddf9a 52%, #fff4bf)",
+      "ingredients": ["Quinoa", "Grilled paneer", "Spinach", "Broccoli", "Mint dressing"],
+      "description": "A light, high-fiber kit with pre-portioned greens and a bright herb dressing."
+    },
+    {
+      "id": "hp-tandoori",
+      "name": "High Protein Tandoori Kit",
+      "category": "High protein",
+      "price": 329,
+      "calories": 560,
+      "protein": 46,
+      "carbs": 38,
+      "fat": 18,
+      "cookTime": "25 min",
+      "badge": "Fitness",
+      "image": "linear-gradient(135deg, #b33822, #f99d45 58%, #ffe6c7)",
+      "ingredients": ["Tandoori chicken", "Millet roti", "Kachumber", "Hung curd dip"],
+      "description": "A macro-balanced protein kit designed for post-workout dinners."
+    },
+    {
+      "id": "vg-thai-curry",
+      "name": "Vegan Thai Curry Box",
+      "category": "Vegan",
+      "price": 299,
+      "calories": 510,
+      "protein": 22,
+      "carbs": 62,
+      "fat": 19,
+      "cookTime": "30 min",
+      "badge": "Plant based",
+      "image": "linear-gradient(135deg, #315c48, #e9c46a 56%, #f8efe1)",
+      "ingredients": ["Tofu", "Coconut curry paste", "Brown rice", "Seasonal vegetables"],
+      "description": "Fragrant curry ingredients portioned for a satisfying vegan meal."
+    },
+    {
+      "id": "df-millet-khichdi",
+      "name": "Diabetic Friendly Millet Khichdi",
+      "category": "Diabetic friendly",
+      "price": 219,
+      "calories": 390,
+      "protein": 19,
+      "carbs": 44,
+      "fat": 11,
+      "cookTime": "22 min",
+      "badge": "Low GI",
+      "image": "linear-gradient(135deg, #25646c, #9cc66d 55%, #f6f0dc)",
+      "ingredients": ["Foxtail millet", "Moong dal", "Bottle gourd", "Roasted spice mix"],
+      "description": "Low-glycemic comfort food built with whole grains and measured portions."
+    },
+    {
+      "id": "kt-avocado-paneer",
+      "name": "Keto Avocado Paneer Plate",
+      "category": "Keto",
+      "price": 349,
+      "calories": 610,
+      "protein": 31,
+      "carbs": 16,
+      "fat": 44,
+      "cookTime": "15 min",
+      "badge": "Low carb",
+      "image": "linear-gradient(135deg, #264653, #5fad56 52%, #f2d492)",
+      "ingredients": ["Paneer", "Avocado", "Zucchini noodles", "Seed crumble"],
+      "description": "A low-carb meal kit with rich fats, crisp greens and fast prep."
+    },
+    {
+      "id": "fp-family-fiesta",
+      "name": "Family Fiesta Taco Kit",
+      "category": "Family packs",
+      "price": 799,
+      "calories": 680,
+      "protein": 34,
+      "carbs": 82,
+      "fat": 22,
+      "cookTime": "35 min",
+      "badge": "Serves 4",
+      "image": "linear-gradient(135deg, #7a3e2e, #e7b54f 52%, #ffe9a8)",
+      "ingredients": ["Whole wheat tacos", "Bean filling", "Salsa", "Corn salad", "Cheese"],
+      "description": "A family-sized kit with flexible toppings for different tastes."
+    }
+  ],
+  "plans": [
+    {
+      "id": "weekly-starter",
+      "name": "Weekly Starter",
+      "cadence": "Weekly",
+      "price": 1499,
+      "meals": 6,
+      "perks": ["Three diet preferences", "Pause anytime", "Two delivery slots"]
+    },
+    {
+      "id": "monthly-balance",
+      "name": "Monthly Balance",
+      "cadence": "Monthly",
+      "price": 5499,
+      "meals": 24,
+      "perks": ["Nutritionist-reviewed rotation", "Auto-renew payments", "Free delivery"]
+    },
+    {
+      "id": "premium-coach",
+      "name": "Premium Nutrition",
+      "cadence": "Monthly",
+      "price": 8499,
+      "meals": 30,
+      "perks": ["Personal goal mapping", "Priority delivery", "Weekly nutrition check-in"]
+    }
+  ],
+  "blogs": [
+    {
+      "id": "macro-friendly",
+      "title": "How to build a macro-friendly dinner plate",
+      "excerpt": "A practical split for protein, slow carbs, colorful vegetables and healthy fats.",
+      "minutes": 4
+    },
+    {
+      "id": "meal-prep",
+      "title": "Meal prep without eating the same thing daily",
+      "excerpt": "Use base ingredients, rotating sauces and smart portions to keep meals fresh.",
+      "minutes": 5
+    },
+    {
+      "id": "low-gi",
+      "title": "Low-GI swaps for Indian comfort meals",
+      "excerpt": "Millets, dal combinations and fiber-rich vegetables that support steady energy.",
+      "minutes": 3
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Rhea S.",
+      "role": "Product manager",
+      "quote": "NutriCart made weekday dinners healthy without turning my evenings into a project."
+    },
+    {
+      "name": "Arjun M.",
+      "role": "Fitness enthusiast",
+      "quote": "The high-protein plans are easy to track and the portions are genuinely useful."
+    },
+    {
+      "name": "Nisha & family",
+      "role": "Family plan customers",
+      "quote": "The family boxes give us healthy food with enough choice for everyone."
+    }
+  ],
+  "users": [],
+  "orders": [
+    {
+      "id": "NC-1024",
+      "customer": "Demo Customer",
+      "total": 1499,
+      "status": "Preparing",
+      "eta": "Today, 7:30 PM",
+      "items": [
+        {
+          "name": "Weekly Starter",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2026-05-06T12:48:00.000Z"
+    }
+  ],
+  "subscriptions": []
+}
