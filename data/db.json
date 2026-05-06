@@ -4,91 +4,223 @@
       "id": "wl-green-bowl",
       "name": "Lean Green Power Bowl",
       "category": "Weight loss",
+      "goal": "Fat loss",
       "price": 249,
       "calories": 420,
       "protein": 28,
       "carbs": 45,
       "fat": 12,
       "cookTime": "20 min",
+      "serves": 1,
       "badge": "Best seller",
+      "accent": "#12805f",
       "image": "linear-gradient(135deg, #0f8f65, #7ddf9a 52%, #fff4bf)",
-      "ingredients": ["Quinoa", "Grilled paneer", "Spinach", "Broccoli", "Mint dressing"],
-      "description": "A light, high-fiber kit with pre-portioned greens and a bright herb dressing."
+      "ingredients": [
+        "Quinoa",
+        "Grilled paneer",
+        "Spinach",
+        "Broccoli",
+        "Mint dressing"
+      ],
+      "allergens": [
+        "Dairy"
+      ],
+      "description": "A light, high-fiber kit with pre-portioned greens and a bright herb dressing.",
+      "stock": 34
     },
     {
       "id": "hp-tandoori",
       "name": "High Protein Tandoori Kit",
       "category": "High protein",
+      "goal": "Muscle gain",
       "price": 329,
       "calories": 560,
       "protein": 46,
       "carbs": 38,
       "fat": 18,
       "cookTime": "25 min",
+      "serves": 1,
       "badge": "Fitness",
+      "accent": "#c44b2d",
       "image": "linear-gradient(135deg, #b33822, #f99d45 58%, #ffe6c7)",
-      "ingredients": ["Tandoori chicken", "Millet roti", "Kachumber", "Hung curd dip"],
-      "description": "A macro-balanced protein kit designed for post-workout dinners."
+      "ingredients": [
+        "Tandoori chicken",
+        "Millet roti",
+        "Kachumber",
+        "Hung curd dip"
+      ],
+      "allergens": [
+        "Dairy"
+      ],
+      "description": "A macro-balanced protein kit designed for post-workout dinners.",
+      "stock": 27
     },
     {
       "id": "vg-thai-curry",
       "name": "Vegan Thai Curry Box",
       "category": "Vegan",
+      "goal": "Plant based",
       "price": 299,
       "calories": 510,
       "protein": 22,
       "carbs": 62,
       "fat": 19,
       "cookTime": "30 min",
+      "serves": 1,
       "badge": "Plant based",
+      "accent": "#315c48",
       "image": "linear-gradient(135deg, #315c48, #e9c46a 56%, #f8efe1)",
-      "ingredients": ["Tofu", "Coconut curry paste", "Brown rice", "Seasonal vegetables"],
-      "description": "Fragrant curry ingredients portioned for a satisfying vegan meal."
+      "ingredients": [
+        "Tofu",
+        "Coconut curry paste",
+        "Brown rice",
+        "Seasonal vegetables"
+      ],
+      "allergens": [
+        "Soy"
+      ],
+      "description": "Fragrant curry ingredients portioned for a satisfying vegan meal.",
+      "stock": 22
     },
     {
       "id": "df-millet-khichdi",
       "name": "Diabetic Friendly Millet Khichdi",
       "category": "Diabetic friendly",
+      "goal": "Low GI",
       "price": 219,
       "calories": 390,
       "protein": 19,
       "carbs": 44,
       "fat": 11,
       "cookTime": "22 min",
+      "serves": 1,
       "badge": "Low GI",
+      "accent": "#25646c",
       "image": "linear-gradient(135deg, #25646c, #9cc66d 55%, #f6f0dc)",
-      "ingredients": ["Foxtail millet", "Moong dal", "Bottle gourd", "Roasted spice mix"],
-      "description": "Low-glycemic comfort food built with whole grains and measured portions."
+      "ingredients": [
+        "Foxtail millet",
+        "Moong dal",
+        "Bottle gourd",
+        "Roasted spice mix"
+      ],
+      "allergens": [],
+      "description": "Low-glycemic comfort food built with whole grains and measured portions.",
+      "stock": 38
     },
     {
       "id": "kt-avocado-paneer",
       "name": "Keto Avocado Paneer Plate",
       "category": "Keto",
+      "goal": "Low carb",
       "price": 349,
       "calories": 610,
       "protein": 31,
       "carbs": 16,
       "fat": 44,
       "cookTime": "15 min",
+      "serves": 1,
       "badge": "Low carb",
+      "accent": "#5fad56",
       "image": "linear-gradient(135deg, #264653, #5fad56 52%, #f2d492)",
-      "ingredients": ["Paneer", "Avocado", "Zucchini noodles", "Seed crumble"],
-      "description": "A low-carb meal kit with rich fats, crisp greens and fast prep."
+      "ingredients": [
+        "Paneer",
+        "Avocado",
+        "Zucchini noodles",
+        "Seed crumble"
+      ],
+      "allergens": [
+        "Dairy",
+        "Seeds"
+      ],
+      "description": "A low-carb meal kit with rich fats, crisp greens and fast prep.",
+      "stock": 18
     },
     {
       "id": "fp-family-fiesta",
       "name": "Family Fiesta Taco Kit",
       "category": "Family packs",
+      "goal": "Family dinner",
       "price": 799,
       "calories": 680,
       "protein": 34,
       "carbs": 82,
       "fat": 22,
       "cookTime": "35 min",
+      "serves": 4,
       "badge": "Serves 4",
+      "accent": "#be7b22",
       "image": "linear-gradient(135deg, #7a3e2e, #e7b54f 52%, #ffe9a8)",
-      "ingredients": ["Whole wheat tacos", "Bean filling", "Salsa", "Corn salad", "Cheese"],
-      "description": "A family-sized kit with flexible toppings for different tastes."
+      "ingredients": [
+        "Whole wheat tacos",
+        "Bean filling",
+        "Salsa",
+        "Corn salad",
+        "Cheese"
+      ],
+      "allergens": [
+        "Gluten",
+        "Dairy"
+      ],
+      "description": "A family-sized kit with flexible toppings for different tastes.",
+      "stock": 16
+    },
+    {
+      "id": "bf-oats-chia",
+      "name": "Overnight Oats Breakfast Pack",
+      "category": "Breakfast",
+      "goal": "Energy",
+      "price": 189,
+      "calories": 360,
+      "protein": 18,
+      "carbs": 52,
+      "fat": 10,
+      "cookTime": "5 min",
+      "serves": 1,
+      "badge": "No cook",
+      "accent": "#7b5f2a",
+      "image": "linear-gradient(135deg, #6b5b3e, #f0c96b 56%, #fff8e6)",
+      "ingredients": [
+        "Rolled oats",
+        "Chia",
+        "Greek yogurt",
+        "Fruit compote",
+        "Almonds"
+      ],
+      "allergens": [
+        "Dairy",
+        "Nuts"
+      ],
+      "description": "A quick breakfast kit with steady carbs and a protein-rich base.",
+      "stock": 42
+    },
+    {
+      "id": "ln-mediterranean",
+      "name": "Mediterranean Chickpea Lunch",
+      "category": "Office lunch",
+      "goal": "Balanced",
+      "price": 279,
+      "calories": 470,
+      "protein": 24,
+      "carbs": 58,
+      "fat": 15,
+      "cookTime": "18 min",
+      "serves": 1,
+      "badge": "Lunch box",
+      "accent": "#237d84",
+      "image": "linear-gradient(135deg, #237d84, #f0b861 55%, #f7f3e7)",
+      "ingredients": [
+        "Chickpeas",
+        "Couscous",
+        "Cucumber",
+        "Olives",
+        "Lemon tahini"
+      ],
+      "allergens": [
+        "Sesame",
+        "Gluten"
+      ],
+      "description": "A bright office lunch kit that travels well and keeps prep simple.",
+      "stock": 31
     }
   ],
   "plans": [
@@ -98,7 +230,13 @@
       "cadence": "Weekly",
       "price": 1499,
       "meals": 6,
-      "perks": ["Three diet preferences", "Pause anytime", "Two delivery slots"]
+      "target": "Busy professionals",
+      "delivery": "2 deliveries/week",
+      "perks": [
+        "Three diet preferences",
+        "Pause anytime",
+        "Two delivery slots"
+      ]
     },
     {
       "id": "monthly-balance",
@@ -106,7 +244,13 @@
       "cadence": "Monthly",
       "price": 5499,
       "meals": 24,
-      "perks": ["Nutritionist-reviewed rotation", "Auto-renew payments", "Free delivery"]
+      "target": "Healthy routines",
+      "delivery": "Flexible weekly delivery",
+      "perks": [
+        "Nutritionist-reviewed rotation",
+        "Auto-renew payments",
+        "Free delivery"
+      ]
     },
     {
       "id": "premium-coach",
@@ -114,7 +258,50 @@
       "cadence": "Monthly",
       "price": 8499,
       "meals": 30,
-      "perks": ["Personal goal mapping", "Priority delivery", "Weekly nutrition check-in"]
+      "target": "Goal-based nutrition",
+      "delivery": "Priority delivery",
+      "perks": [
+        "Personal goal mapping",
+        "Priority support",
+        "Weekly nutrition check-in"
+      ]
+    },
+    {
+      "id": "family-monthly",
+      "name": "Family Monthly",
+      "cadence": "Monthly",
+      "price": 9999,
+      "meals": 36,
+      "target": "Families",
+      "delivery": "Three family drops/week",
+      "perks": [
+        "Serves 3-4",
+        "Kid-friendly swaps",
+        "Weekend batch kits"
+      ]
+    }
+  ],
+  "coupons": [
+    {
+      "code": "HEALTH10",
+      "type": "percent",
+      "value": 10,
+      "minimum": 300,
+      "label": "10% off healthy orders"
+    },
+    {
+      "code": "FIRST150",
+      "type": "flat",
+      "value": 150,
+      "minimum": 700,
+      "label": "Rs 150 off first checkout"
+    },
+    {
+      "code": "CORP20",
+      "type": "percent",
+      "value": 20,
+      "minimum": 3000,
+      "label": "Corporate wellness discount"
     }
   ],
   "blogs": [
@@ -122,19 +309,29 @@
       "id": "macro-friendly",
       "title": "How to build a macro-friendly dinner plate",
       "excerpt": "A practical split for protein, slow carbs, colorful vegetables and healthy fats.",
-      "minutes": 4
+      "minutes": 4,
+      "category": "Nutrition"
     },
     {
       "id": "meal-prep",
       "title": "Meal prep without eating the same thing daily",
       "excerpt": "Use base ingredients, rotating sauces and smart portions to keep meals fresh.",
-      "minutes": 5
+      "minutes": 5,
+      "category": "Planning"
     },
     {
       "id": "low-gi",
       "title": "Low-GI swaps for Indian comfort meals",
       "excerpt": "Millets, dal combinations and fiber-rich vegetables that support steady energy.",
-      "minutes": 3
+      "minutes": 3,
+      "category": "Health"
+    },
+    {
+      "id": "protein-timing",
+      "title": "Simple protein timing for busy training weeks",
+      "excerpt": "A practical way to spread protein across breakfast, lunch, dinner and snacks.",
+      "minutes": 6,
+      "category": "Fitness"
     }
   ],
   "testimonials": [
@@ -154,7 +351,25 @@
       "quote": "The family boxes give us healthy food with enough choice for everyone."
     }
   ],
+  "deliveryZones": [
+    {
+      "area": "North Bengaluru",
+      "fee": 49,
+      "eta": "7:00 AM - 10:00 AM"
+    },
+    {
+      "area": "South Bengaluru",
+      "fee": 59,
+      "eta": "8:00 AM - 11:00 AM"
+    },
+    {
+      "area": "Central Bengaluru",
+      "fee": 39,
+      "eta": "6:30 PM - 9:30 PM"
+    }
+  ],
   "users": [],
+  "carts": {},
   "orders": [
     {
       "id": "NC-1024",
@@ -162,14 +377,39 @@
       "total": 1499,
       "status": "Preparing",
       "eta": "Today, 7:30 PM",
+      "payment": "Razorpay",
+      "address": {
+        "line1": "Demo address"
+      },
       "items": [
         {
           "name": "Weekly Starter",
-          "quantity": 1
+          "quantity": 1,
+          "price": 1499
+        }
+      ],
+      "timeline": [
+        {
+          "label": "Confirmed",
+          "done": true
+        },
+        {
+          "label": "Preparing",
+          "done": true
+        },
+        {
+          "label": "Out for delivery",
+          "done": false
+        },
+        {
+          "label": "Delivered",
+          "done": false
         }
       ],
       "createdAt": "2026-05-06T12:48:00.000Z"
     }
   ],
-  "subscriptions": []
+  "subscriptions": [],
+  "quizResults": [],
+  "corporateLeads": []
 }

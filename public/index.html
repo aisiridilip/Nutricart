@@ -3,210 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NutriCart | Healthy Meal Kit Subscriptions</title>
-    <meta name="description" content="NutriCart is a healthy meal kit subscription and e-commerce platform for customized nutrition goals.">
+    <title>NutriCart | Healthy Meal Kit Subscription Platform</title>
+    <meta name="description" content="NutriCart is a healthy meal kit subscription and e-commerce platform with meal plans, cart checkout, delivery tracking and admin tools.">
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#home" aria-label="NutriCart home">
+      <a class="brand" href="/" data-link aria-label="NutriCart home">
         <span class="brand-mark">N</span>
         <span>NutriCart</span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#plans">Meal plans</a>
-        <a href="#subscriptions">Subscriptions</a>
-        <a href="#tracking">Tracking</a>
-        <a href="#blog">Health tips</a>
-        <a href="#admin">Admin</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="Toggle menu">Menu</button>
+      <nav class="nav" data-nav aria-label="Primary navigation">
+        <a href="/" data-link>Home</a>
+        <a href="/meals" data-link>Meal kits</a>
+        <a href="/subscriptions" data-link>Subscriptions</a>
+        <a href="/tracking" data-link>Tracking</a>
+        <a href="/blog" data-link>Health tips</a>
+        <a href="/corporate" data-link>Corporate</a>
+        <a href="/admin" data-link>Admin</a>
       </nav>
-      <button class="icon-button cart-toggle" type="button" aria-label="Open cart">
-        <span class="cart-icon" aria-hidden="true"></span>
+      <a class="cart-link" href="/cart" data-link aria-label="Open cart">
+        <span class="cart-symbol" aria-hidden="true"></span>
         <span id="cartCount">0</span>
-      </button>
+      </a>
     </header>
 
-    <main>
-      <section id="home" class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Subscription meal kits for healthier routines</p>
-          <h1>NutriCart</h1>
-          <p class="hero-text">Customized meal plans, fresh pre-portioned ingredients, nutrition details and recurring delivery in one full-stack e-commerce platform.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#plans">Browse meals</a>
-            <a class="button ghost" href="#subscriptions">Compare plans</a>
-          </div>
-        </div>
-        <div class="hero-visual" aria-label="Healthy meal kit arrangement">
-          <div class="meal-art">
-            <span class="leaf leaf-a"></span>
-            <span class="leaf leaf-b"></span>
-            <span class="grain"></span>
-            <span class="protein"></span>
-            <span class="veg veg-a"></span>
-            <span class="veg veg-b"></span>
-            <span class="sauce"></span>
-          </div>
-          <div class="nutrition-strip">
-            <span>420 kcal</span>
-            <span>28g protein</span>
-            <span>20 min</span>
-          </div>
-        </div>
-      </section>
+    <main id="app" tabindex="-1"></main>
 
-      <section class="metrics" aria-label="Business highlights">
-        <div>
-          <strong>6</strong>
-          <span>Diet categories</span>
-        </div>
-        <div>
-          <strong>24+</strong>
-          <span>Monthly meals</span>
-        </div>
-        <div>
-          <strong>10%</strong>
-          <span>Coupon HEALTH10</span>
-        </div>
-        <div>
-          <strong>2 hr</strong>
-          <span>Delivery windows</span>
-        </div>
-      </section>
-
-      <section id="auth" class="band">
-        <div class="section-heading">
-          <p class="eyebrow">Account</p>
-          <h2>User Registration & Login</h2>
-        </div>
-        <form id="registerForm" class="auth-panel">
-          <label>
-            Full name
-            <input name="name" autocomplete="name" placeholder="Aarav Sharma" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
-          </label>
-          <label>
-            Mobile
-            <input name="phone" autocomplete="tel" placeholder="+91 98765 43210" required>
-          </label>
-          <fieldset>
-            <legend>Dietary preferences</legend>
-            <label><input type="checkbox" value="Weight loss"> Weight loss</label>
-            <label><input type="checkbox" value="High protein"> High protein</label>
-            <label><input type="checkbox" value="Vegan"> Vegan</label>
-            <label><input type="checkbox" value="Keto"> Keto</label>
-          </fieldset>
-          <button class="button primary" type="submit">Verify & create dashboard</button>
-          <p id="authMessage" class="form-message" role="status"></p>
-        </form>
-      </section>
-
-      <section id="plans" class="band light">
-        <div class="section-heading">
-          <p class="eyebrow">Meal Plan Section</p>
-          <h2>Browse nutrition-first meal kits</h2>
-        </div>
-        <div id="categoryTabs" class="tabs" role="tablist" aria-label="Meal categories"></div>
-        <div id="mealGrid" class="meal-grid"></div>
-      </section>
-
-      <section id="subscriptions" class="band">
-        <div class="section-heading">
-          <p class="eyebrow">Subscription Management</p>
-          <h2>Weekly, monthly and premium plans</h2>
-        </div>
-        <div id="planGrid" class="plan-grid"></div>
-      </section>
-
-      <section id="checkout" class="checkout band light">
-        <div class="section-heading">
-          <p class="eyebrow">Cart & Checkout</p>
-          <h2>Address, coupons and payment</h2>
-        </div>
-        <div class="checkout-layout">
-          <form id="checkoutForm" class="checkout-form">
-            <label>
-              Delivery address
-              <textarea name="address" rows="3" placeholder="Apartment, street, city" required></textarea>
-            </label>
-            <label>
-              Payment gateway
-              <select name="payment">
-                <option>Razorpay</option>
-                <option>Stripe</option>
-                <option>Cash on delivery</option>
-              </select>
-            </label>
-            <label>
-              Coupon
-              <input name="coupon" placeholder="Try HEALTH10">
-            </label>
-            <button class="button primary" type="submit">Place order</button>
-            <p id="checkoutMessage" class="form-message" role="status"></p>
-          </form>
-          <aside class="summary">
-            <h3>Order summary</h3>
-            <div id="summaryItems"></div>
-            <div class="summary-row"><span>Subtotal</span><strong id="subtotal">Rs 0</strong></div>
-            <div class="summary-row"><span>Delivery</span><strong id="delivery">Rs 0</strong></div>
-            <div class="summary-row"><span>Total</span><strong id="total">Rs 0</strong></div>
-          </aside>
-        </div>
-      </section>
-
-      <section id="tracking" class="band">
-        <div class="section-heading">
-          <p class="eyebrow">Delivery Tracking</p>
-          <h2>Live order status and notifications</h2>
-        </div>
-        <div id="trackingList" class="tracking-list"></div>
-      </section>
-
-      <section id="blog" class="band light">
-        <div class="section-heading">
-          <p class="eyebrow">Blog / Health Tips</p>
-          <h2>Nutrition, recipes and fitness content</h2>
-        </div>
-        <div id="blogGrid" class="blog-grid"></div>
-      </section>
-
-      <section class="band testimonials">
-        <div class="section-heading">
-          <p class="eyebrow">Customers</p>
-          <h2>Built for busy healthy routines</h2>
-        </div>
-        <div id="testimonialGrid" class="testimonial-grid"></div>
-      </section>
-
-      <section id="admin" class="band admin-band">
-        <div class="section-heading">
-          <p class="eyebrow">Admin Dashboard</p>
-          <h2>Products, orders, customers and analytics</h2>
-        </div>
-        <div id="adminDashboard" class="admin-dashboard"></div>
-      </section>
-    </main>
-
-    <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
-      <div class="drawer-header">
-        <h2>Your cart</h2>
-        <button class="icon-button close-cart" type="button" aria-label="Close cart">x</button>
-      </div>
-      <div id="cartItems" class="cart-items"></div>
-      <a class="button primary full" href="#checkout">Checkout</a>
-    </aside>
-    <div id="scrim" class="scrim"></div>
-
-    <div id="customizeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
-      <div class="modal-card">
-        <button class="icon-button modal-close" type="button" aria-label="Close customization">x</button>
-        <h2 id="modalTitle">Customize meal</h2>
-        <div id="modalBody"></div>
-      </div>
-    </div>
+    <aside id="toast" class="toast" aria-live="polite" aria-hidden="true"></aside>
 
     <script src="/app.js" defer></script>
   </body>
