@@ -10,6 +10,18 @@ npm start
 
 Open `http://localhost:3000`.
 
+## Deploy on Render
+
+NutriCart is ready to deploy as a Render Web Service.
+
+- Repository: `https://github.com/aisiridilip/Nutricart`
+- Runtime: `Node`
+- Build command: `npm install`
+- Start command: `npm start`
+- Health check path: `/api/health`
+
+Render will provide a public URL like `https://nutricart.onrender.com` after the first deploy completes.
+
 ## Included modules
 
 - Home page with NutriCart positioning and meal-kit visuals

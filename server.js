@@ -521,6 +521,11 @@ async function handleApi(req, res) {
     return;
   }
 
+  if (req.method === "GET" && url.pathname === "/api/health") {
+    sendJson(res, 200, { ok: true, service: "NutriCart" });
+    return;
+  }
+
   if (req.method === "GET" && url.pathname === "/api/cart") {
     const sessionId = getSessionId(req);
     sendJson(res, 200, { cart: cartPayload(db, getCart(db, sessionId)) });
@@ -819,6 +824,6 @@ const server = http.createServer((req, res) => {
 });
 
 ensureDataStore();
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`NutriCart running at http://localhost:${PORT}`);
 });
